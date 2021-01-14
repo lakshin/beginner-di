@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-View", "1-View", "{7FC62D3F-0C1C-4910-8A71-A535190D4568}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Presentation", "2-Presentation", "{B68E2F17-24DF-4297-92BD-CAC6B55BB270}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-DataAccess", "3-DataAccess", "{EE56BFB5-8356-4DA6-9E07-9D0389C0025E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-DataStorage", "4-DataStorage", "{3981304E-89B9-4D76-8C92-0748A181624D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetViewer", "PlanetViewer\PlanetViewer.csproj", "{3A5E36CB-FB30-4CE1-AFAA-17F8AFBCA387}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetViewer.Presentation", "PlanetViewer.Presentation\PlanetViewer.Presentation.csproj", "{3992547B-5C7D-409F-A2B4-7DBEB20D19C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetDataReader.Service", "PlanetDataReader.Service\PlanetDataReader.Service.csproj", "{851D6A0D-018E-43F5-86B0-ECD78BEF4949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planet.Service", "Planet.Service\Planet.Service.csproj", "{0FF165E5-679C-4B54-9094-B3E9F3977598}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A5E36CB-FB30-4CE1-AFAA-17F8AFBCA387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A5E36CB-FB30-4CE1-AFAA-17F8AFBCA387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A5E36CB-FB30-4CE1-AFAA-17F8AFBCA387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A5E36CB-FB30-4CE1-AFAA-17F8AFBCA387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3992547B-5C7D-409F-A2B4-7DBEB20D19C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3992547B-5C7D-409F-A2B4-7DBEB20D19C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3992547B-5C7D-409F-A2B4-7DBEB20D19C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3992547B-5C7D-409F-A2B4-7DBEB20D19C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851D6A0D-018E-43F5-86B0-ECD78BEF4949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851D6A0D-018E-43F5-86B0-ECD78BEF4949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851D6A0D-018E-43F5-86B0-ECD78BEF4949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851D6A0D-018E-43F5-86B0-ECD78BEF4949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF165E5-679C-4B54-9094-B3E9F3977598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF165E5-679C-4B54-9094-B3E9F3977598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF165E5-679C-4B54-9094-B3E9F3977598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF165E5-679C-4B54-9094-B3E9F3977598}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A5E36CB-FB30-4CE1-AFAA-17F8AFBCA387} = {7FC62D3F-0C1C-4910-8A71-A535190D4568}
+		{3992547B-5C7D-409F-A2B4-7DBEB20D19C9} = {B68E2F17-24DF-4297-92BD-CAC6B55BB270}
+		{851D6A0D-018E-43F5-86B0-ECD78BEF4949} = {EE56BFB5-8356-4DA6-9E07-9D0389C0025E}
+		{0FF165E5-679C-4B54-9094-B3E9F3977598} = {3981304E-89B9-4D76-8C92-0748A181624D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5599F74E-A050-47DB-A81A-F16E0D4D16E0}
+	EndGlobalSection
+EndGlobal

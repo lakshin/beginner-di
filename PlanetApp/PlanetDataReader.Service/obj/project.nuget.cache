@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "tBeXnQBnvyXr0uP1Om+4Zt8DdlpVBqFDjiI1JCxOfEG8OvF4TCKTeksZvQ+k9pq70YlOu5zit7EsV1HW1MpXJw==",
+  "success": true,
+  "projectFilePath": "D:\\99x\\DI\\beginner-di\\PlanetApp\\PlanetDataReader.Service\\PlanetDataReader.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lakshin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Lakshin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
