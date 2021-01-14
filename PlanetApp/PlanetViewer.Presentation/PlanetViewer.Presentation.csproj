@@ -4,4 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PlanetApp.Common\PlanetApp.Common.csproj" />
+    <ProjectReference Include="..\PlanetDataReader.Service\PlanetDataReader.Service.csproj" />
+  </ItemGroup>
+
 </Project>
