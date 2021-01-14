@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Planet.Service
+namespace PlanetService
 {
 	public class Startup
 	{
@@ -34,6 +34,8 @@ namespace Planet.Service
 			{
 				app.UseDeveloperExceptionPage();
 			}
+
+			app.UseStaticFiles();
 
 			app.UseRouting();
 

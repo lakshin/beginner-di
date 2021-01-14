@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:PlanetViewer"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <!---Planet Card Template-->
     </Application.Resources>
 </Application>

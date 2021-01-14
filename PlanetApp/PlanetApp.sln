@@ -11,13 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-DataAccess", "3-DataAcces
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-DataStorage", "4-DataStorage", "{3981304E-89B9-4D76-8C92-0748A181624D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetViewer", "PlanetViewer\PlanetViewer.csproj", "{3A5E36CB-FB30-4CE1-AFAA-17F8AFBCA387}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanetViewer", "PlanetViewer\PlanetViewer.csproj", "{3A5E36CB-FB30-4CE1-AFAA-17F8AFBCA387}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetViewer.Presentation", "PlanetViewer.Presentation\PlanetViewer.Presentation.csproj", "{3992547B-5C7D-409F-A2B4-7DBEB20D19C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanetViewer.Presentation", "PlanetViewer.Presentation\PlanetViewer.Presentation.csproj", "{3992547B-5C7D-409F-A2B4-7DBEB20D19C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetDataReader.Service", "PlanetDataReader.Service\PlanetDataReader.Service.csproj", "{851D6A0D-018E-43F5-86B0-ECD78BEF4949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanetDataReader.Service", "PlanetDataReader.Service\PlanetDataReader.Service.csproj", "{851D6A0D-018E-43F5-86B0-ECD78BEF4949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planet.Service", "Planet.Service\Planet.Service.csproj", "{0FF165E5-679C-4B54-9094-B3E9F3977598}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{C20C667D-A84C-4A4B-80EE-C26D8C31CD7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanetApp.Common", "PlanetApp.Common\PlanetApp.Common.csproj", "{F93B68C8-57AE-4C4E-9830-65EC112AA95E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetService", "PlanetService\PlanetService.csproj", "{53B04285-A7F3-430D-894F-873A5730941A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +41,14 @@ Global
 		{851D6A0D-018E-43F5-86B0-ECD78BEF4949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{851D6A0D-018E-43F5-86B0-ECD78BEF4949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{851D6A0D-018E-43F5-86B0-ECD78BEF4949}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0FF165E5-679C-4B54-9094-B3E9F3977598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FF165E5-679C-4B54-9094-B3E9F3977598}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0FF165E5-679C-4B54-9094-B3E9F3977598}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0FF165E5-679C-4B54-9094-B3E9F3977598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93B68C8-57AE-4C4E-9830-65EC112AA95E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93B68C8-57AE-4C4E-9830-65EC112AA95E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93B68C8-57AE-4C4E-9830-65EC112AA95E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93B68C8-57AE-4C4E-9830-65EC112AA95E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B04285-A7F3-430D-894F-873A5730941A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B04285-A7F3-430D-894F-873A5730941A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B04285-A7F3-430D-894F-873A5730941A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B04285-A7F3-430D-894F-873A5730941A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,7 +57,8 @@ Global
 		{3A5E36CB-FB30-4CE1-AFAA-17F8AFBCA387} = {7FC62D3F-0C1C-4910-8A71-A535190D4568}
 		{3992547B-5C7D-409F-A2B4-7DBEB20D19C9} = {B68E2F17-24DF-4297-92BD-CAC6B55BB270}
 		{851D6A0D-018E-43F5-86B0-ECD78BEF4949} = {EE56BFB5-8356-4DA6-9E07-9D0389C0025E}
-		{0FF165E5-679C-4B54-9094-B3E9F3977598} = {3981304E-89B9-4D76-8C92-0748A181624D}
+		{F93B68C8-57AE-4C4E-9830-65EC112AA95E} = {C20C667D-A84C-4A4B-80EE-C26D8C31CD7B}
+		{53B04285-A7F3-430D-894F-873A5730941A} = {3981304E-89B9-4D76-8C92-0748A181624D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5599F74E-A050-47DB-A81A-F16E0D4D16E0}

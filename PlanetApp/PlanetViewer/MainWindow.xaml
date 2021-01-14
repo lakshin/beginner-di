@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PlanetViewer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="600" Width="1080">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <ListBox Grid.Row="0" Margin="10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">                       
+                        <Label Content="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Load Planets" Background="#0080ff" Foreground="#fff" FontSize="24" Grid.Column="0" Margin="10"/>
+            <Button Content="Clear Data" Grid.Column="1" Background="#ff4d4d" Foreground="#fff" Margin="10" FontSize="24"/>
+        </Grid>
     </Grid>
 </Window>
