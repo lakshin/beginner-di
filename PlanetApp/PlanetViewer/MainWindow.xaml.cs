@@ -22,11 +22,22 @@ namespace PlanetViewer
 	public partial class MainWindow : Window
 	{
 		private PlanetViewModel _viewModel;
+
 		public MainWindow()
 		{
 			InitializeComponent();
 			_viewModel = new PlanetViewModel();
 			this.DataContext = _viewModel;
+		}
+
+		private async void LoadButton_Click(object sender, RoutedEventArgs e)
+		{
+			await _viewModel.GetPlanets();
+		}
+
+		private void ClearButton_Click(object sender, RoutedEventArgs e)
+		{
+			_viewModel.Clear();
 		}
 	}
 }

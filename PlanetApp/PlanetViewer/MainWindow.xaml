@@ -12,22 +12,30 @@
             <RowDefinition Height="4*" />
             <RowDefinition Height="100" />
         </Grid.RowDefinitions>
-        <ListBox Grid.Row="0" Margin="10">
+        <ListBox Grid.Row="0" Margin="10" ItemsSource="{Binding Planets}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel IsItemsHost="True" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Horizontal">                       
-                        <Label Content="{Binding Name}" />
-                    </StackPanel>
+                    <Border CornerRadius="6" BorderBrush="Gray" Background="LightGoldenrodYellow" BorderThickness="2" DockPanel.Dock="Top">
+                        <StackPanel Orientation="Vertical"  Margin="10">
+                            <Image Stretch="UniformToFill" Height="120"  Source="{Binding ImageUri}" />
+                            <Label FontSize="20" Content="{Binding Name}" HorizontalAlignment="Center" />
+                        </StackPanel>
+                    </Border>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Content="Load Planets" Background="#0080ff" Foreground="#fff" FontSize="24" Grid.Column="0" Margin="10"/>
-            <Button Content="Clear Data" Grid.Column="1" Background="#ff4d4d" Foreground="#fff" Margin="10" FontSize="24"/>
+            <Button Content="Load Planets" Background="#0080ff" Foreground="#fff" FontSize="24" Grid.Column="0" Margin="10" Click="LoadButton_Click" />
+            <Button Content="Clear Data" Grid.Column="1" Background="#ff4d4d" Foreground="#fff" Margin="10" FontSize="24" Click="ClearButton_Click" />
         </Grid>
     </Grid>
 </Window>
