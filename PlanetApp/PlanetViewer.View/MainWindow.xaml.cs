@@ -32,7 +32,14 @@ namespace PlanetViewer
 
 		private async void LoadButton_Click(object sender, RoutedEventArgs e)
 		{
-			await _viewModel.GetPlanets();
+			try
+			{
+				await _viewModel.GetPlanets();
+			}
+			catch
+			{
+				MessageBox.Show("No data to available");
+			}
 		}
 
 		private void ClearButton_Click(object sender, RoutedEventArgs e)
