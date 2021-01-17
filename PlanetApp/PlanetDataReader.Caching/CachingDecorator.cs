@@ -8,7 +8,7 @@ namespace PlanetDataReader.Caching
 	public class CachingDecorator : IPlanetReader
 	{
 		private IPlanetReader _wrappedPlanetReader;
-		private TimeSpan _cacheDuration = new TimeSpan(0, 0, 20);
+		private TimeSpan _cacheDuration = new TimeSpan(0, 1, 0);
 
 		private IReadOnlyCollection<Planet> _cachedPlanets;
 		private DateTime _dataSetDateTime;
