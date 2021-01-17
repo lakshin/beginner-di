@@ -10,7 +10,7 @@ namespace PlanetDataReader.Service
 	public class ServiceReader: IPlanetReader
 	{
 		private HttpClient client = new HttpClient();
-		private string baseUri = "http://localhost:49301/api/planets";
+		private string baseUri = "http://localhost:5000/api/planets";
 
 		public async Task<IReadOnlyCollection<Planet>> GetPlanets()
 		{
