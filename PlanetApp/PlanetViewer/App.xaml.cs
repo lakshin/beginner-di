@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using PlanetDataReader.Caching;
 using PlanetDataReader.Service;
 using PlanetViewer.Presentation;
 
@@ -26,8 +27,9 @@ namespace PlanetViewer
 
 		private static void ComposeObjects()
 		{
-			var reader = new ServiceReader();
-			var viewModel = new PlanetViewModel(reader);
+			var serviceReader = new ServiceReader();
+			var cachedDecorator = new CachingDecorator(serviceReader);
+			var viewModel = new PlanetViewModel(cachedDecorator);
 			Application.Current.MainWindow = new MainWindow(viewModel);
 		}
 	}

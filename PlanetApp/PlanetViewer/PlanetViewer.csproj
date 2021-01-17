@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PlanetDataReader.Caching\PlanetDataReader.Caching.csproj" />
     <ProjectReference Include="..\PlanetViewer.Presentation\PlanetViewer.Presentation.csproj" />
     <ProjectReference Include="..\PlanetViewer.View\PlanetViewer.View.csproj" />
   </ItemGroup>
