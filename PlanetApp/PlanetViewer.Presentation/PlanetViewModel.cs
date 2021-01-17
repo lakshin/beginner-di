@@ -10,7 +10,7 @@ namespace PlanetViewer.Presentation
 {
 	public class PlanetViewModel : INotifyPropertyChanged
 	{
-		private ServiceReader _dataReader;
+		private IPlanetReader _dataReader;
 
 		private IReadOnlyCollection<Planet> _planets;
 
@@ -31,9 +31,9 @@ namespace PlanetViewer.Presentation
 			get { return _dataReader.GetType().ToString(); }
 		}
 
-		public PlanetViewModel()
+		public PlanetViewModel(IPlanetReader dataReader)
 		{
-			_dataReader = new ServiceReader();
+			_dataReader = dataReader;
 		}
 
 		public async Task GetPlanets()

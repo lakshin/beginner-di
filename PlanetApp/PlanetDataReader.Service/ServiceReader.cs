@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PlanetDataReader.Service
 {
-	public class ServiceReader
+	public class ServiceReader: IPlanetReader
 	{
 		private HttpClient client = new HttpClient();
 		private string baseUri = "http://localhost:49301/api/planets";

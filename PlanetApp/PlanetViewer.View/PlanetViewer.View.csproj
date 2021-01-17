@@ -1,14 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PlanetApp.Common\PlanetApp.Common.csproj" />
     <ProjectReference Include="..\PlanetViewer.Presentation\PlanetViewer.Presentation.csproj" />
-    <ProjectReference Include="..\PlanetViewer.View\PlanetViewer.View.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>

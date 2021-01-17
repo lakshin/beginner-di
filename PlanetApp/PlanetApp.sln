@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-View", "1-View", "{7FC62D3F-0C1C-4910-8A71-A535190D4568}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Bootstrapper", "0-Bootstrapper", "{7FC62D3F-0C1C-4910-8A71-A535190D4568}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Presentation", "2-Presentation", "{B68E2F17-24DF-4297-92BD-CAC6B55BB270}"
 EndProject
@@ -21,7 +21,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{C20C66
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanetApp.Common", "PlanetApp.Common\PlanetApp.Common.csproj", "{F93B68C8-57AE-4C4E-9830-65EC112AA95E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetService", "PlanetService\PlanetService.csproj", "{53B04285-A7F3-430D-894F-873A5730941A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanetService", "PlanetService\PlanetService.csproj", "{53B04285-A7F3-430D-894F-873A5730941A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-View", "1-View", "{0FFE93CA-D768-4AD3-9CCB-089147226A85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetViewer.View", "PlanetViewer.View\PlanetViewer.View.csproj", "{8D5A77AA-37C7-4671-A97D-322F6E548489}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,10 @@ Global
 		{53B04285-A7F3-430D-894F-873A5730941A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53B04285-A7F3-430D-894F-873A5730941A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53B04285-A7F3-430D-894F-873A5730941A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D5A77AA-37C7-4671-A97D-322F6E548489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D5A77AA-37C7-4671-A97D-322F6E548489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D5A77AA-37C7-4671-A97D-322F6E548489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D5A77AA-37C7-4671-A97D-322F6E548489}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,7 @@ Global
 		{851D6A0D-018E-43F5-86B0-ECD78BEF4949} = {EE56BFB5-8356-4DA6-9E07-9D0389C0025E}
 		{F93B68C8-57AE-4C4E-9830-65EC112AA95E} = {C20C667D-A84C-4A4B-80EE-C26D8C31CD7B}
 		{53B04285-A7F3-430D-894F-873A5730941A} = {3981304E-89B9-4D76-8C92-0748A181624D}
+		{8D5A77AA-37C7-4671-A97D-322F6E548489} = {0FFE93CA-D768-4AD3-9CCB-089147226A85}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5599F74E-A050-47DB-A81A-F16E0D4D16E0}
