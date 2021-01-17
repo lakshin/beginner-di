@@ -10,8 +10,8 @@ namespace PlanetService.Models
 		{
 			return new List<Planet> {
 				new Planet {Id = 1, Name = "Mercury", ImageUri = $"{baseUrl}/images/mercury.jpg"},
-				new Planet {Id = 1, Name = "Venus", ImageUri = $"{baseUrl}/images/venus.jpg"},
-				new Planet {Id = 1, Name = "Earth", ImageUri = $"{baseUrl}/images/earth.jpg"}
+				new Planet {Id = 2, Name = "Venus", ImageUri = $"{baseUrl}/images/venus.jpg"},
+				new Planet {Id = 3, Name = "Earth", ImageUri = $"{baseUrl}/images/earth.jpg"}
 			};
 		}
 	}
