@@ -9,12 +9,18 @@ namespace PlanetDataReader.Service
 {
 	public class ServiceReader: IPlanetReader
 	{
-		private HttpClient client = new HttpClient();
-		private string baseUri = "http://localhost:5000/api/planets";
+		private IHttpClientFactory _clientFactory;
+		//private HttpClient client = new HttpClient();
+		//private string baseUri = "http://localhost:5000/api/planets";
+
+		public ServiceReader(IHttpClientFactory clientFactory)
+		{
+			_clientFactory = clientFactory;
+		}
 
 		public async Task<IReadOnlyCollection<Planet>> GetPlanets()
 		{
-			HttpResponseMessage response = await client.GetAsync(baseUri);
+			HttpResponseMessage response = await _clientFactory.CreateClient("jsonService").GetAsync("planets");
 			response.EnsureSuccessStatusCode();
 			var responseBody = await response.Content.ReadAsStringAsync();
 			var planets = JsonSerializer.Deserialize<IReadOnlyCollection<Planet>>(responseBody, new JsonSerializerOptions

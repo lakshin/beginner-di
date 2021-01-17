@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanetDataReader.CSV", "Pla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanetDataReader.Caching", "PlanetDataReader.Caching\PlanetDataReader.Caching.csproj", "{C1335E00-5358-4349-9A49-CE0483B0A216}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetViewer.MsDI", "PlanetViewer.MsDI\PlanetViewer.MsDI.csproj", "{B4B76D45-2E2F-4222-AEE2-FD60A772ED6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{C1335E00-5358-4349-9A49-CE0483B0A216}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1335E00-5358-4349-9A49-CE0483B0A216}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1335E00-5358-4349-9A49-CE0483B0A216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B76D45-2E2F-4222-AEE2-FD60A772ED6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B76D45-2E2F-4222-AEE2-FD60A772ED6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B76D45-2E2F-4222-AEE2-FD60A772ED6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B76D45-2E2F-4222-AEE2-FD60A772ED6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +88,7 @@ Global
 		{8D5A77AA-37C7-4671-A97D-322F6E548489} = {0FFE93CA-D768-4AD3-9CCB-089147226A85}
 		{91952046-4BEE-4DD4-BA1C-3CBA96F3086B} = {EE56BFB5-8356-4DA6-9E07-9D0389C0025E}
 		{C1335E00-5358-4349-9A49-CE0483B0A216} = {EE56BFB5-8356-4DA6-9E07-9D0389C0025E}
+		{B4B76D45-2E2F-4222-AEE2-FD60A772ED6D} = {7FC62D3F-0C1C-4910-8A71-A535190D4568}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5599F74E-A050-47DB-A81A-F16E0D4D16E0}
