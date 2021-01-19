@@ -12,12 +12,12 @@ namespace PlanetService.Controllers
 	[ApiController]
 	[Route("api/[controller]")]
 	public class PlanetsController : ControllerBase
-	{		
+	{
 		private IPlanetProvider _provider;
 
-		public PlanetsController()
+		public PlanetsController(IPlanetProvider provider)
 		{
-			_provider = new StaticPlanetProvider();
+			_provider = provider;
 		}
 
 		[HttpGet]
