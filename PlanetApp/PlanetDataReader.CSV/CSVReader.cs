@@ -7,12 +7,17 @@ namespace PlanetDataReader.CSV
 {
 	public class CSVReader : IPlanetReader
 	{
-		private readonly ICSVLoader _csvLoader;
+		private ICSVLoader _csvLoader;
 
 		public CSVReader()
 		{
 			var filePath = $"{AppDomain.CurrentDomain.BaseDirectory}Data/Planets.csv";
 			_csvLoader = new CSVLoader(filePath);
+		}
+
+		public void SetCSVLoader(ICSVLoader csvLoader)
+		{
+			_csvLoader = csvLoader;
 		}
 
 		public async Task<IReadOnlyCollection<Planet>> GetPlanets()
