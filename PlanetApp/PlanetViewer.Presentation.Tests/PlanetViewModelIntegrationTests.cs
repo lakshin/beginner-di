@@ -25,6 +25,8 @@ namespace PlanetViewer.Presentation.Tests
 			await viewModel.GetPlanets();
 
 			//Assert
+
+			mock.Verify(loader => loader.LoadCSV(), Times.Once);
 			Assert.IsNotNull(viewModel.Planets, "Planets is null in view model");
 			Assert.AreEqual(2, viewModel.Planets.Count, "Planets count is incorrect");
 		}
